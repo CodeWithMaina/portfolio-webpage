@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    height: auto;
+    padding: 10px 30px 0 0;
+}
+.social-links {
+    grid-column: 1/span 1;
+    align-items: center;
+    justify-content: center;
+}
+.main-section {
+    grid-column:2/ span 11;
+
+}
+
+/* Global designs */
+ul {
+    list-style: none;
+}
+.heading-section {
+    display: flex;
+    align-items: center;
+}
+/* social links */
+.social-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Nav Bar */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+}
+.greetings {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 30px;
+}
+.greetings span {
+    color: purple;
+}
+.greetings button {
+    max-width: fit-content;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid purple;
+    background-color: #000;
+}
+.image {
+    flex: 1;
+}
+.image img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.current {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #f9f9f9;
+    padding: 0 10px;
+}
+
+/* Word Section*/
+.word-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.word {
+    border: 1px solid #f9f9f9;
+    padding: 20px;
+}
+.who {
+    align-self: flex-end;
+    border: 1px solid #f9f9f9;
+    padding: 10px;
+
+}
+
+/* Projects Section */
+
+.title {
+    font-size: 2rem;
+}
+.heading-section hr {
+    height: 0;
+    width: 50%;
+}
+.heading-section button {
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.projects {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 20px;
+}
+.project-card {
+    width: 1/3;
+    border: 1px solid #f9f9f9;
+}
+.project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #f9f9f9;
+}
+.project-card button {
+    max-width: fit-content;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid purple;
+    background-color: #000;
+}
+.project-card h6 {
+    padding: 0 10px;
+    font-size: 16px;
+}
+.title-section {
+    padding: 0 0 20px 20px;
+}
+
+
+/* Skills Section */
+.skills {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skill-component {
+    border: 1px solid #f9f9f9;
+    padding: 20px;
+    width: 50px;
+}
+/* About Me Section */
+.description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+
+}
+.description-container img {
+    flex: 1;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    max-height: fit-content;
+
+}
+
+.description-container button {
+    max-width: fit-content;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid purple;
+    background-color: #000;
+}
+
+/* Conatcts Section */
+.contact .description-container p {
+    flex: 1;
+    width: 50%;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid #f9f9f9;
+    padding-left: 20px;
+    width: 100px;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* Footer Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.top-section .social-links ul {
+    display: flex;
+    flex-direction: row;
+}
+.bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
