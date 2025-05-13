@@ -157,6 +157,9 @@ body {
     border: 1px solid #fff;
     max-width: max-content;
 }
+.current-mobile {
+    display: none;
+}
 
 .current i {
     font-size: 1.2rem;
@@ -236,9 +239,8 @@ body {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    gap: 30px;
 }
 
 .project-card {
@@ -435,4 +437,63 @@ body {
     margin-top: 50px;
     color: #aaa;
     font-size: 0.9rem;
+}
+
+/* Resposnsiveness */
+
+
+/* Mobile phone screen sizes */
+@media (max-width: 767px) {
+    .container{
+        width: 100%;
+    }
+    .social-links-left {
+        width: 30px;
+    }
+    .heading-section {
+        flex-direction: column;
+    }
+    .heading-section hr {
+        display: none;
+    }
+    /* NavigationBar */
+    .nav-links ul {
+        display: none;
+    }
+    /* Hero Section */
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .greetings,
+    .image {
+        width: 100%;
+    }
+    .current-mobile{
+        display: block;
+    }
+    .current {
+        display: none;
+    }
+
+    /* Project section */
+    .projects {
+        flex-direction: column;
+        }
+    .project-card {
+        width: 80%;
+    }
+
+    /* Conatcts */
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Footer Section */
+    .footer-content {
+        flex-direction: column;
+    }
+    /* Left Social Links */
+    .social-links-right {
+        display: none;
+    }
 }
