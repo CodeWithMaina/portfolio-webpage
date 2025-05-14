@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peter - Software Engineer</title>
+    <script src="/script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,10 +18,10 @@
         <hr />
         <ul>
           <li>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/CodeWithMaina" target="_blank"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/peter-chege-803593349/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -33,12 +34,15 @@
         <!-- Navigation Bar -->
         <div class="nav-links">
           <div class="logo">Peter</div>
-          <ul>
-            <li><a href="#">#home</a></li>
-            <li><a href="#projects">#projects</a></li>
-            <li><a href="#skills">#skills</a></li>
-            <li><a href="#about-me">#about-me</a></li>
-            <li><a href="#contacts">#contacts</a></li>
+          <button class="hamburger" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#"><span class="hash-tag">#</span>home</a></li>
+            <li><a href="#projects"><span class="hash-tag">#</span>projects</a></li>
+            <li><a href="#skills"><span class="hash-tag">#</span>skills</a></li>
+            <li><a href="#about-me"><span class="hash-tag">#</span>about-me</a></li>
+            <li><a href="#contacts"><span class="hash-tag">#</span>contacts</a></li>
           </ul>
         </div>
 
@@ -46,7 +50,7 @@
         <div class="hero">
           <div class="greetings">
             <h1>
-              Hi, I'm a <span>Software Engineer</span> and front-end developer
+              Hi, I'm a <span class="colored">Software Engineer</span> and front-end developer
             </h1>
             <p>I'm currently into this, frontend Dev, backend Dev.</p>
             <button>Scroll Down <i class="fas fa-arrow-down"></i></button>
@@ -55,8 +59,6 @@
             <img
               src="/images/tech.png"
               alt="Peter's Image"
-              height="250px"
-              width="100%"
             />
             <div class="current-mobile">
               <!-- <i class="fas fa-code"></i> -->
@@ -64,14 +66,16 @@
             </div>
             <div class="current">
               <i class="fas fa-code"></i>
-              <p>Currently working on <strong>Software Engineering Attache</strong> at Teach2Give</p>
+              <p>
+                Currently working as a
+                <strong>Software Engineering Attache</strong> at Teach2Give
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Quote Section -->
         <div class="word-container">
-          <div class="quote-number">44</div>
           <p class="word">
             Control can sometimes be an illusion. <br />
             But sometimes you need illusion to gain control.
@@ -82,12 +86,12 @@
         <!-- Projects Section -->
         <div id="projects" class="projects-container">
           <div class="heading-section">
-            <h1 class="title">#projects</h1>
+            <h1 class="title"><span class="hash-tag">#</span>projects</h1>
             <hr />
-            <div class="search-box">
+            <!-- <div class="search-box">
               <i class="fas fa-search"></i>
               <input type="text" placeholder="Search" />
-            </div>
+            </div> -->
           </div>
 
           <div class="projects">
@@ -99,7 +103,7 @@
                 <h2>IIITapfolio</h2>
                 <p>Acadia/New-Acada Portfolio Of IIIT-5 Security</p>
                 <div class="project-footer">
-                  <button><i class="far fa-heart"></i> Like</button>
+                  <button class="github-button"><i class="far fa-heart"></i> Like</button>
                 </div>
               </div>
             </div>
@@ -110,7 +114,7 @@
                 <h2>ProjectX</h2>
                 <p>Online Cloud Based File Sharing We are selling data</p>
                 <div class="project-footer">
-                  <button><i class="far fa-heart"></i> Like</button>
+                  <button class="github-button"><i class="far fa-heart"></i> Like</button>
                 </div>
               </div>
             </div>
@@ -127,7 +131,7 @@
                   climic into onClick.
                 </p>
                 <div class="project-footer">
-                  <button><i class="far fa-heart"></i> Like</button>
+                  <button class="github-button"><i class="far fa-heart"></i> Like</button>
                 </div>
               </div>
             </div>
@@ -141,7 +145,7 @@
         <!-- Skills Section -->
         <div id="skills" class="skills-container">
           <div class="heading-section">
-            <h1 class="title">#skills</h1>
+            <h1 class="title"><span class="hash-tag">#</span>skills</h1>
             <hr />
           </div>
 
@@ -192,7 +196,7 @@
         <!-- About Me Section -->
         <div id="about-me" class="about-me-container">
           <div class="heading-section">
-            <h1 class="title">#about-me</h1>
+            <h1 class="title"><span class="hash-tag">#</span>about-me</h1>
             <hr />
           </div>
 
@@ -218,7 +222,7 @@
                 of website applications.
               </p>
               <button class="message-btn">
-                <i class="fas fa-envelope"></i> Message me
+                <i class="fas fa-arrow-down"></i> Resume
               </button>
             </div>
           </div>
@@ -227,7 +231,7 @@
         <!-- Contact Section -->
         <div id="contacts" class="contact-container">
           <div class="heading-section">
-            <h1 class="title">#contacts</h1>
+            <h1 class="title"><span class="hash-tag">#</span>contacts</h1>
             <hr />
           </div>
 
@@ -273,10 +277,10 @@
       <div class="social-links-right">
         <ul>
           <li>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/CodeWithMaina" target="_blank"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/peter-chege-803593349/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li>
             <a href="#"><i class="fab fa-twitter"></i></a>
